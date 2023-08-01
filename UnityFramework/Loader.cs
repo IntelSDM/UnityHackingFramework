@@ -11,6 +11,8 @@ namespace UnityFramework
     {
         public static void Init()
         {
+            Loader.Object.AddComponent<Globals>();
+            Loader.Object.AddComponent<DrawMenu>();
             UnityEngine.Object.DontDestroyOnLoad(Object);
         }
         public static GameObject Object = new GameObject();

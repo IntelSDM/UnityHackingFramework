@@ -98,5 +98,17 @@ namespace UnityFramework.Helpers
             else
                 LoadConfig();
         }
+        public static List<string> GetConfigs()
+        {
+            List<string> files = new List<string>();
+            DirectoryInfo d = new DirectoryInfo(ConfigPath);
+            FileInfo[] Files = d.GetFiles("*.cfg");
+            foreach (FileInfo file in Files)
+            {
+                files.Add(file.Name.Substring(0, file.Name.Length - 4));
+
+            }
+            return files;
+        }
     }
 }

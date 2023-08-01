@@ -294,6 +294,8 @@
   <ItemGroup>
     <Compile Include="Configs\Colours.cs" />
     <Compile Include="Configs\Config.cs" />
+    <Compile Include="Configs\Menu.cs" />
+    <Compile Include="DrawMenu.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Drawing.cs" />
     <Compile Include="Helpers\Access.cs" />
@@ -303,11 +305,16 @@
     <Compile Include="Helpers\RaycastHelper.cs" />
     <Compile Include="Helpers\ShaderHelper.cs" />
     <Compile Include="Loader.cs" />
-    <Compile Include="Menu.cs" />
+    <Compile Include="Menu\Button.cs" />
+    <Compile Include="Menu\Entity.cs" />
+    <Compile Include="Menu\FloatSlider.cs" />
+    <Compile Include="Menu\IntSlider.cs" />
+    <Compile Include="Menu\Keybind.cs" />
+    <Compile Include="Menu\SubMenu.cs" />
+    <Compile Include="Menu\TextField.cs" />
+    <Compile Include="Menu\Toggle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Menu\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
