@@ -288,7 +288,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Globals.cs" />
-    <Compile Include="Helpers.cs" />
+    <Compile Include="Drawing.cs" />
     <Compile Include="Loader.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
