@@ -16,7 +16,7 @@ namespace UnityFramework
     class Globals : MonoBehaviour
     {
         public static Camera MainCamera;
-     //   public static Cheat.Configs.Config Config = new Configs.Config();
+        public static Configs.Config Config = new Configs.Config();
      
         public static bool IsScreenPointVisible(Vector3 screenpoint)
         {
@@ -33,8 +33,8 @@ namespace UnityFramework
         void Start()
         {
         //    Helpers.ShaderHelper.GetShader();
-         //   Helpers.ConfigHelper.CreateEnvironment();
-          //  Helpers.ColourHelper.AddColours();
+            Helpers.ConfigHelper.SetUp();
+            Helpers.ColourHelper.SetUp();
         }
       
     }

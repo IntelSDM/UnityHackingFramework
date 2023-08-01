@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -287,15 +290,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configs\Colours.cs" />
+    <Compile Include="Configs\Config.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Drawing.cs" />
+    <Compile Include="Helpers\ColourHelper.cs" />
+    <Compile Include="Helpers\ConfigHelper.cs" />
     <Compile Include="Loader.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Configs\" />
-    <Folder Include="Helpers\" />
     <Folder Include="Menu\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
