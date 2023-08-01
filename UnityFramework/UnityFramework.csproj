@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -294,8 +296,11 @@
     <Compile Include="Configs\Config.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Drawing.cs" />
+    <Compile Include="Helpers\Access.cs" />
     <Compile Include="Helpers\ColourHelper.cs" />
     <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Helpers\DumbHool.cs" />
+    <Compile Include="Helpers\RaycastHelper.cs" />
     <Compile Include="Helpers\ShaderHelper.cs" />
     <Compile Include="Loader.cs" />
     <Compile Include="Menu.cs" />

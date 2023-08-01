@@ -9,22 +9,20 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace UnityFramework
 {
-    /*
-    You may see some unity methods just calling a function of the method with a 1 on the end. This is because we are excluding the unity method from obfuscation.
-    We need to exclude these to keep them working but we make another function to keep the actual code obfuscated.
-     */
     class Globals : MonoBehaviour
     {
         public static Camera MainCamera;
         public static Configs.Config Config = new Configs.Config();
-     
+        
         public static bool IsScreenPointVisible(Vector3 screenpoint)
         {
+            // check if esp is on screen, dont render
             return screenpoint.z > 0.01f && screenpoint.x > -5f && screenpoint.y > -5f && screenpoint.x < (float)Screen.width && screenpoint.y < (float)Screen.height;
         }
 
         public static Vector3 WorldPointToScreenPoint(Vector3 worldPoint)
         {
+            // work to screen, flip height
             Vector3 vector = MainCamera.WorldToScreenPoint(worldPoint);
             vector.y = (float)Screen.height - vector.y;
             return vector;
