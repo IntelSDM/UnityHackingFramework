@@ -296,6 +296,7 @@
     <Compile Include="Drawing.cs" />
     <Compile Include="Helpers\ColourHelper.cs" />
     <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Helpers\ShaderHelper.cs" />
     <Compile Include="Loader.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

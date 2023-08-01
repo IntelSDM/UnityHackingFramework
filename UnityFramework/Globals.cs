@@ -32,7 +32,7 @@ namespace UnityFramework
       
         void Start()
         {
-        //    Helpers.ShaderHelper.GetShader();
+            Helpers.ShaderHelper.SetUp();
             Helpers.ConfigHelper.SetUp();
             Helpers.ColourHelper.SetUp();
         }
