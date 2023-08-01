@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnityFramework
 {
-    public class Class1
+    class Menu
     {
     }
 }
